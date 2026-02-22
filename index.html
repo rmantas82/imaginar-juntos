@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Valle Azul: El secreto del río — Imaginar Juntos</title>
   <meta name="description" content="Valle Azul: El secreto del río. 120 páginas ilustradas a color. Para niños de 6 a 10 años. Disponible en Amazon.">
-  <!-- Google Analytics — sustituye G-XXXXXXXXXX por tu ID real -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -50,13 +49,15 @@
     .hdrops{position:absolute;inset:0;pointer-events:none;overflow:hidden;}
     .hd{position:absolute;animation:hdf ease-in-out infinite;opacity:.42;}
     @keyframes hdf{0%,100%{transform:translateY(0) rotate(0deg);}50%{transform:translateY(-14px) rotate(10deg);}}
-    .htext{position:relative;z-index:2;}
+
+    /* hero text — clase renombrada a .hero-text para no colisionar con .htext de historia */
+    .hero-text{position:relative;z-index:2;}
     .badge{display:inline-block;background:var(--dorado);color:var(--azul-p);font-family:'Baloo 2',cursive;font-weight:700;font-size:.78rem;padding:5px 17px;border-radius:40px;margin-bottom:18px;text-transform:uppercase;letter-spacing:1px;animation:bp 2.5s ease-in-out infinite;}
     @keyframes bp{0%,100%{transform:scale(1);}50%{transform:scale(1.04);}}
     .htitle{font-size:clamp(2.7rem,5.2vw,4.6rem);font-weight:800;color:#fff;line-height:1.06;margin-bottom:6px;text-shadow:0 4px 28px rgba(0,0,0,.42);}
     .htitle .sub{font-size:clamp(1.25rem,2.7vw,2rem);color:var(--azul-c);display:block;font-weight:600;}
-    .hauthor{color:rgba(255,255,255,.55);font-size:.93rem;margin-bottom:16px;font-style:italic;}
-    .hdesc{color:rgba(255,255,255,.82);font-size:1.02rem;line-height:1.8;margin-bottom:32px;max-width:460px;}
+    .hauthor{color:rgba(255,255,255,.75);font-size:.93rem;margin-bottom:16px;font-style:italic;}
+    .hdesc{color:#fff !important;font-size:1.02rem;line-height:1.8;margin-bottom:32px;max-width:460px;text-shadow:0 2px 14px rgba(0,0,0,.7);}
     .hbtns{display:flex;gap:12px;flex-wrap:wrap;}
     .btn-p{background:var(--dorado);color:var(--azul-p);font-family:'Baloo 2',cursive;font-weight:800;font-size:1rem;padding:13px 27px;border-radius:50px;text-decoration:none;display:inline-flex;align-items:center;gap:7px;transition:transform .3s,box-shadow .3s;box-shadow:0 6px 22px rgba(255,209,102,.36);}
     .btn-p:hover{transform:translateY(-3px);box-shadow:0 12px 32px rgba(255,209,102,.46);}
@@ -262,10 +263,17 @@
     footer a{color:rgba(255,255,255,.36);text-decoration:none;}
 
     @media(max-width:960px){
-      #hero{grid-template-columns:1fr;padding:92px 26px 52px;text-align:center;}
-      .hbook{order:-1;} .hbook img{max-height:320px;}
-      .hbtns,.hdesc{margin-left:auto;margin-right:auto;}
+      #hero{grid-template-columns:1fr;padding:80px 24px 48px;text-align:center;background:linear-gradient(158deg,#060F1C 0%,#0D2B45 40%,#1A4A75 100%);}
+      .hbook{order:-1;}
+      .hbook img{max-height:240px;}
+      .htitle{font-size:2.4rem;text-shadow:0 3px 20px rgba(0,0,0,.8);}
+      .htitle .sub{font-size:1.2rem;}
+      .hauthor{color:rgba(255,255,255,.85);text-shadow:0 2px 10px rgba(0,0,0,.7);font-size:.85rem;}
+      .hdesc{font-size:.92rem;margin:0 auto 24px;}
       .hbtns{justify-content:center;}
+      .btn-p,.btn-g{font-size:.88rem;padding:11px 20px;}
+      /* fondo oscuro solo al bloque hero-text en móvil */
+      .hero-text{background:rgba(0,0,0,.28);border-radius:18px;padding:22px 18px;backdrop-filter:blur(4px);}
       .hist-grid,.libro-lay,.autor-lay{grid-template-columns:1fr;gap:34px;}
       .lbook-sticky{position:static;} .portada-w{max-width:240px;margin:0 auto;}
       .pj-main{grid-template-columns:1fr 1fr;}
@@ -314,7 +322,7 @@
 <section id="hero">
   <div class="hglow"></div>
   <div class="hdrops" id="heroDrops"></div>
-  <div class="htext">
+  <div class="hero-text">
     <div class="badge">✨ Disponible en Amazon</div>
     <h1 class="htitle">Valle Azul<span class="sub">El secreto del río</span></h1>
     <p class="hauthor">por Rafa Mantas — con la imaginación de Ángel Mantas</p>
@@ -413,7 +421,6 @@
           </ul>
         </div>
 
-        <!-- Personajes misteriosos -->
         <div class="misterio-box">
           <h4>🌫️ Y en Valle Azul también se cruzan con...</h4>
           <div class="misterio-personajes">
@@ -428,12 +435,11 @@
               <img src="lapiz.png" alt="El chico del lápiz" class="mp-img">
               <div class="mp-info">
                 <h5>L. — El compañero de clase</h5>
-				<p>Garabatea en su cuaderno sin mirar a nadie, como si estuviera en una clase distinta a la de los demás. Lleva un lápiz de madera oscura que trata como un tesoro. Era de su padre.</p>
+                <p>Garabatea en su cuaderno sin mirar a nadie, como si estuviera en una clase distinta a la de los demás. Lleva un lápiz de madera oscura que trata como un tesoro. Era de su padre.</p>
               </div>
             </div>
           </div>
         </div>
-
       </div>
     </div>
   </div>
@@ -463,7 +469,7 @@
         <div class="pjbody">
           <h3>Leo</h3>
           <span class="pjrole">6 años · El impulsivo</span>
-          <p>Nunca se queda quieto. Colecciona tesoros en los bolsillos y lleva una pulsera azul trenzada hecha por su hermano Alex..</p>
+          <p>Nunca se queda quieto. Colecciona tesoros en los bolsillos y lleva una pulsera azul trenzada hecha por su hermano Álex.</p>
           <span class="pjtag">🟡 La pulsera trenzada</span>
         </div>
       </div>
@@ -487,7 +493,6 @@
       </div>
     </div>
 
-    <!-- Familia -->
     <h3 style="font-size:1.25rem;color:var(--azul-n);margin-bottom:18px;" class="fi">👨‍👩‍👦 La familia</h3>
     <div class="familia-row fi">
       <div class="fam-card">
@@ -508,7 +513,6 @@
       </div>
     </div>
 
-    <!-- Vídeo -->
     <div class="video-box fi">
       <div class="vbox-text">
         <h3>🎬 Los personajes cobran vida</h3>
@@ -571,24 +575,24 @@
 
     <div id="g-clase" class="pueblo-group pg-clase active fi">
       <div class="pc">
-        <div class="pc-img"><img src="comp_rizado.png" alt="Compañero de clase"></div>
+        <div class="pc-img"><img src="comp_rizado.png" alt="Rubén"></div>
         <h4>Rubén</h4>
-		<p>No para de mover la pierna debajo del pupitre. Su mesa parece una lavadora en centrifugado.</p>
+        <p>No para de mover la pierna debajo del pupitre. Su mesa parece una lavadora en centrifugado.</p>
       </div>
       <div class="pc">
-        <div class="pc-img"><img src="comp_trenzas.png" alt="Compañera de clase"></div>
+        <div class="pc-img"><img src="comp_trenzas.png" alt="Clara"></div>
         <h4>Clara</h4>
-		<p>Trenza y sonrisa fácil. La única capaz de hablar con todos sin discutir con nadie.</p>
+        <p>Trenza y sonrisa fácil. La única capaz de hablar con todos sin discutir con nadie.</p>
       </div>
       <div class="pc">
-        <div class="pc-img"><img src="comp_gafas.png" alt="Compañero con gafas"></div>
+        <div class="pc-img"><img src="comp_gafas.png" alt="Mateo"></div>
         <h4>Mateo</h4>
-		<p>Duerme con la cabeza dentro de la mochila. Resopla como si el esfuerzo de escuchar fuera deporte olímpico.</p>
+        <p>Duerme con la cabeza dentro de la mochila. Resopla como si el esfuerzo de escuchar fuera deporte olímpico.</p>
       </div>
       <div class="pc">
-        <div class="pc-img"><img src="comp_pelirroja.png" alt="Compañera pelirroja"></div>
+        <div class="pc-img"><img src="comp_pelirroja.png" alt="Nora"></div>
         <h4>Nora</h4>
-		<p>Levanta la mano cada dos minutos, aunque nadie hubiera preguntado nada.</p>
+        <p>Levanta la mano cada dos minutos, aunque nadie hubiera preguntado nada.</p>
       </div>
     </div>
 
@@ -684,12 +688,11 @@
       <a href="https://www.amazon.es/secreto-del-r%C3%ADo-Valle-Azul-ebook/dp/B0G6SCJR6P/" target="_blank" rel="noopener" class="amzbig">🛒 Comprar Valle Azul en Amazon</a>
     </div>
 
-    <!-- Reseñas -->
     <div style="max-width:720px;margin:20px auto 0;background:linear-gradient(135deg,#EBF4FF,#F0EAFF);border-radius:18px;padding:28px 32px;border:2px solid rgba(59,158,232,0.2);text-align:center;" class="fi">
       <p style="font-size:1.5rem;margin-bottom:8px;">⭐⭐⭐⭐⭐</p>
       <h4 style="font-family:'Baloo 2',cursive;font-size:1.1rem;color:var(--azul-n);margin-bottom:10px;">¿Ya has leído Valle Azul?</h4>
       <p style="font-size:.95rem;color:#4a6a88;line-height:1.7;margin-bottom:18px;">Una reseña en Amazon nos ayuda muchísimo a que más familias encuentren el libro. Solo lleva dos minutos y significa mucho para nosotros.</p>
-      <a href="https://www.amazon.es/secreto-del-r%C3%ADo-Valle-Azul-ebook/dp/B0G6SCJR6P/#customerReviews" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;background:var(--azul);color:white;font-family:'Baloo 2',cursive;font-weight:800;font-size:.95rem;padding:12px 26px;border-radius:50px;text-decoration:none;transition:transform .3s,box-shadow .3s;box-shadow:0 6px 20px rgba(59,158,232,.3);">✍️ Dejar reseña en Amazon</a>
+      <a href="https://www.amazon.es/secreto-del-r%C3%ADo-Valle-Azul-ebook/dp/B0G6SCJR6P/#customerReviews" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;background:var(--azul);color:white;font-family:'Baloo 2',cursive;font-weight:800;font-size:.95rem;padding:12px 26px;border-radius:50px;text-decoration:none;box-shadow:0 6px 20px rgba(59,158,232,.3);">✍️ Dejar reseña en Amazon</a>
     </div>
     <div class="mpstrip fi">
       <span class="mpico">🔖</span>
