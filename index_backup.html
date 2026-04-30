@@ -238,54 +238,22 @@
     .pc h4{font-size:.92rem;color:var(--azul-n);margin-bottom:4px;}
     .pc p{font-size:.78rem;color:#8aabcc;line-height:1.5;font-style:italic;}
 
-    /* ===== COLOREAR ===== */
-    #colorear{padding:92px 0;background:linear-gradient(180deg,#FFF8EE 0%,#FFF0FA 100%);position:relative;}
-    #colorear::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;background:linear-gradient(90deg,var(--naranja),var(--dorado),var(--verde),var(--azul),var(--lav));}
-    .color-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:860px;margin:0 auto;}
-    .color-card{background:#fff;border-radius:22px;overflow:hidden;box-shadow:0 6px 24px rgba(0,0,0,.07);transition:transform .3s,box-shadow .3s;border:3px solid transparent;text-align:center;}
-    .color-card:hover{transform:translateY(-6px);box-shadow:0 18px 44px rgba(0,0,0,.12);}
-    .color-thumb{background:linear-gradient(135deg,#f5f5f5,#e8ecf5);height:160px;display:flex;align-items:center;justify-content:center;font-size:4rem;position:relative;overflow:hidden;}
-    .color-thumb::after{content:'Para colorear';position:absolute;bottom:0;left:0;right:0;background:rgba(0,0,0,.06);font-family:'Baloo 2',cursive;font-size:.72rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:#8aabcc;padding:5px 0;}
-    .color-card-body{padding:16px 16px 20px;}
-    .color-card-body h4{font-size:1rem;color:var(--azul-n);margin-bottom:6px;}
-    .color-card-body p{font-size:.82rem;color:#8aabcc;line-height:1.55;margin-bottom:14px;}
-    .color-dl{display:inline-flex;align-items:center;gap:7px;background:linear-gradient(135deg,var(--azul),var(--lav));color:#fff;font-family:'Baloo 2',cursive;font-weight:700;font-size:.84rem;padding:9px 20px;border-radius:40px;text-decoration:none;transition:transform .3s,box-shadow .3s;box-shadow:0 4px 14px rgba(59,158,232,.28);}
-    .color-dl:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(59,158,232,.38);}
-    .color-dl.disabled{background:linear-gradient(135deg,#ccc,#bbb);pointer-events:none;box-shadow:none;}
-    .color-note{text-align:center;margin-top:32px;font-size:.9rem;color:#8aabcc;font-style:italic;}
-
     /* ===== REDES ===== */
     #redes{padding:92px 0;background:linear-gradient(160deg,#060F1A 0%,#0D2B45 100%);text-align:center;position:relative;overflow:hidden;}
     #redes::before{content:'';position:absolute;top:-100px;left:50%;transform:translateX(-50%);width:580px;height:580px;background:radial-gradient(circle,rgba(59,158,232,.09),transparent 65%);border-radius:50%;pointer-events:none;}
     #redes .stitle{color:#fff;}
     #redes .stag{color:var(--dorado);}
     #redes .sdesc{color:rgba(255,255,255,.48);}
-    .rg{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;max-width:960px;margin:0 auto 14px;}
-    .rg2{display:grid;grid-template-columns:1fr 1fr;gap:14px;max-width:640px;margin:0 auto;}
-    .rc{border-radius:22px;padding:32px 20px;text-align:center;transition:transform .3s,box-shadow .3s;text-decoration:none;}
+    .rg{display:grid;grid-template-columns:1fr 1fr;gap:17px;max-width:640px;margin:0 auto;}
+    .rc{border-radius:22px;padding:36px 24px;text-align:center;transition:transform .3s,box-shadow .3s;text-decoration:none;}
     .rc:hover{transform:translateY(-6px) scale(1.02);box-shadow:0 20px 50px rgba(0,0,0,.3);}
     .rig{background:linear-gradient(145deg,#833AB4 0%,#FD1D1D 50%,#FCAF45 100%);}
     .rtt{background:linear-gradient(145deg,#111,#69C9D0 50%,#EE1D52 100%);}
-    .rfb{background:linear-gradient(145deg,#1877F2,#0A58CA);}
-    .rth{background:linear-gradient(145deg,#101010,#444);}
-    .rx{background:linear-gradient(145deg,#111,#333);}
-    .ryt{background:linear-gradient(145deg,#c4302b,#FF0000);}
-    .ri{font-size:2.4rem;display:block;margin-bottom:11px;}
-    .rc h3{font-size:1.15rem;color:#fff;margin-bottom:6px;}
-    .rc p{font-size:.82rem;color:rgba(255,255,255,.72);line-height:1.55;margin-bottom:16px;}
-    .rh{background:rgba(255,255,255,.2);color:#fff;font-family:'Baloo 2',cursive;font-weight:700;font-size:.86rem;padding:7px 18px;border-radius:40px;display:inline-block;transition:background .3s;}
+    .ri{font-size:2.7rem;display:block;margin-bottom:13px;}
+    .rc h3{font-size:1.3rem;color:#fff;margin-bottom:7px;}
+    .rc p{font-size:.86rem;color:rgba(255,255,255,.76);line-height:1.6;margin-bottom:19px;}
+    .rh{background:rgba(255,255,255,.2);color:#fff;font-family:'Baloo 2',cursive;font-weight:700;font-size:.9rem;padding:8px 21px;border-radius:40px;display:inline-block;transition:background .3s;}
     .rc:hover .rh{background:rgba(255,255,255,.32);}
-    /* YouTube especial con sub-secciones */
-    .ryt-full{grid-column:1/-1;max-width:960px;margin:0 auto;width:100%;background:linear-gradient(145deg,#1a0000,#c4302b 60%,#FF0000);border-radius:22px;padding:32px 36px;text-align:left;display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:center;transition:transform .3s,box-shadow .3s;text-decoration:none;}
-    .ryt-full:hover{transform:translateY(-4px);box-shadow:0 20px 50px rgba(196,48,43,.4);}
-    .ryt-left h3{font-size:1.4rem;color:#fff;margin-bottom:8px;display:flex;align-items:center;gap:10px;}
-    .ryt-left p{font-size:.9rem;color:rgba(255,255,255,.78);line-height:1.7;margin-bottom:16px;}
-    .ryt-pills{display:flex;gap:9px;flex-wrap:wrap;}
-    .ryt-pill{background:rgba(255,255,255,.18);color:#fff;font-family:'Baloo 2',cursive;font-weight:700;font-size:.78rem;padding:5px 14px;border-radius:40px;display:inline-flex;align-items:center;gap:5px;}
-    .ryt-right{display:flex;flex-direction:column;gap:12px;}
-    .ryt-series{background:rgba(255,255,255,.1);border-radius:15px;padding:16px 18px;border:1px solid rgba(255,255,255,.15);}
-    .ryt-series h4{font-size:.92rem;color:var(--dorado);margin-bottom:5px;display:flex;align-items:center;gap:7px;}
-    .ryt-series p{font-size:.8rem;color:rgba(255,255,255,.7);line-height:1.55;}
     .rnote{margin-top:28px;color:rgba(255,255,255,.36);font-size:.88rem;font-style:italic;}
 
     footer{background:#02060C;padding:44px 20px;text-align:center;color:rgba(255,255,255,.32);font-size:.85rem;line-height:2.1;}
@@ -314,11 +282,7 @@
       .rar ul{grid-template-columns:1fr;}
       .stats{grid-template-columns:1fr 1fr;}
       .social-grid{grid-template-columns:1fr;}
-      .color-grid{grid-template-columns:1fr 1fr!important;}
-      .rg{grid-template-columns:1fr 1fr;}
-      .rg2{grid-template-columns:1fr 1fr;}
-      .ryt-full{grid-template-columns:1fr;text-align:center;}
-      .ryt-pills{justify-content:center;}
+      .rg{grid-template-columns:1fr;max-width:340px;}
       .amzhero{padding:42px 24px;}
       .mpstrip{flex-direction:column;text-align:center;}
       .video-box{grid-template-columns:1fr;}
@@ -328,9 +292,6 @@
       nav{padding:10px 14px;} .nav-l{display:none;}
       .pj-main{grid-template-columns:1fr;}
       .stats{grid-template-columns:1fr;}
-      .color-grid{grid-template-columns:1fr 1fr!important;}
-      .rg{grid-template-columns:1fr;}
-      .rg2{grid-template-columns:1fr;}
       .ilgrid{grid-template-columns:1fr;}
     }
   </style>
@@ -349,7 +310,6 @@
     <li><a href="#historia">La historia</a></li>
     <li><a href="#libro">El libro</a></li>
     <li><a href="#personajes">Personajes</a></li>
-    <li><a href="#colorear">🎨 Colorear</a></li>
     <li><a href="#autor">El autor</a></li>
     <li><a href="#pueblo">El pueblo</a></li>
     <li><a href="#colegios">Colegios</a></li>
@@ -567,43 +527,6 @@
   </div>
 </section>
 
-<!-- COLOREAR -->
-<section id="colorear">
-  <div class="wrap">
-    <div class="sh fi">
-      <span class="stag">Descargables gratuitos</span>
-      <h2 class="stitle">🎨 ¡Píntalo tú!</h2>
-      <p class="sdesc">Cuatro láminas del libro para imprimir y colorear. Gratis para casa o para el cole.</p>
-    </div>
-    <div class="color-grid fi" style="grid-template-columns:repeat(4,1fr);max-width:960px;">
-      <div class="color-card">
-        <div style="border-radius:16px 16px 0 0;overflow:hidden;line-height:0;"><img src="Imagen1.png" alt="Lámina para colorear 1" style="width:100%;height:auto;display:block;"></div>
-        <div class="color-card-body" style="padding:14px 14px 18px;">
-          <a href="Imagen1.pdf" target="_blank" rel="noopener" class="color-dl" style="width:100%;justify-content:center;">📥 Descargar</a>
-        </div>
-      </div>
-      <div class="color-card">
-        <div style="border-radius:16px 16px 0 0;overflow:hidden;line-height:0;"><img src="Imagen2.png" alt="Lámina para colorear 2" style="width:100%;height:auto;display:block;"></div>
-        <div class="color-card-body" style="padding:14px 14px 18px;">
-          <a href="Imagen2.pdf" target="_blank" rel="noopener" class="color-dl" style="width:100%;justify-content:center;">📥 Descargar</a>
-        </div>
-      </div>
-      <div class="color-card">
-        <div style="border-radius:16px 16px 0 0;overflow:hidden;line-height:0;"><img src="Imagen3.png" alt="Lámina para colorear 3" style="width:100%;height:auto;display:block;"></div>
-        <div class="color-card-body" style="padding:14px 14px 18px;">
-          <a href="Imagen3.pdf" target="_blank" rel="noopener" class="color-dl" style="width:100%;justify-content:center;">📥 Descargar</a>
-        </div>
-      </div>
-      <div class="color-card">
-        <div style="border-radius:16px 16px 0 0;overflow:hidden;line-height:0;"><img src="Imagen4.png" alt="Lámina para colorear 4" style="width:100%;height:auto;display:block;"></div>
-        <div class="color-card-body" style="padding:14px 14px 18px;">
-          <a href="Imagen4.pdf" target="_blank" rel="noopener" class="color-dl" style="width:100%;justify-content:center;">📥 Descargar</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- AUTOR -->
 <section id="autor">
   <div class="wrap">
@@ -741,22 +664,6 @@
         <p>El propio colegio publicó la presentación de Ángel en sus redes: "Nuestro alumno de 3º de Primaria Ángel Mantas ha presentado su libro Valle Azul..."</p>
         <a href="https://www.instagram.com/p/DUGP9ZOAl4U/?hl=es" target="_blank" rel="noopener" class="slink">Ver publicación →</a>
       </div>
-      <div class="soccard">
-        <div class="soch">
-          <div class="sicn sig">🏫</div>
-          <div><div class="splatf">Instagram del colegio · @salesianoslin</div><div class="shandle">Salesianos Linares</div></div>
-        </div>
-        <p>Salesianos Linares compartió la visita de Ángel con su libro Valle Azul.</p>
-        <a href="https://www.instagram.com/p/DXed73ZjXN7/" target="_blank" rel="noopener" class="slink">Ver publicación →</a>
-      </div>
-      <div class="soccard">
-        <div class="soch">
-          <div class="sicn sig">🏫</div>
-          <div><div class="splatf">Instagram del colegio · @sagradocorazonlinares</div><div class="shandle">Sagrado Corazón Linares</div></div>
-        </div>
-        <p>Sagrado Corazón Linares también publicó la presentación de Valle Azul en sus redes.</p>
-        <a href="https://www.instagram.com/p/DXucqHXDbtR/" target="_blank" rel="noopener" class="slink">Ver publicación →</a>
-      </div>      
     </div>
   </div>
 </section>
@@ -803,7 +710,7 @@
     <div class="sh fi">
       <span class="stag">Síguenos</span>
       <h2 class="stitle">Únete a la aventura</h2>
-      <p class="sdesc">Novedades del proyecto, personajes animados, viajes en el tiempo y todo lo que viene en Valle Azul.</p>
+      <p class="sdesc">Novedades del proyecto, personajes animados y todo lo que viene en Valle Azul.</p>
     </div>
     <div class="rg fi">
       <a href="https://instagram.com/imaginar.juntos" target="_blank" rel="noopener" class="rc rig">
@@ -818,38 +725,8 @@
         <p>Vídeos de los personajes y el mundo de Valle Azul.</p>
         <span class="rh">@imaginar.juntos</span>
       </a>
-      <a href="https://www.facebook.com/profile.php?id=61574265373185" target="_blank" rel="noopener" class="rc rfb">
-        <span class="ri">👍</span>
-        <h3>Facebook</h3>
-        <p>Comparte la aventura con tu familia y amigos.</p>
-        <span class="rh">Imaginar Juntos</span>
-      </a>
     </div>
-    <div class="rg2 fi">
-      <a href="https://threads.net/@imaginar.juntos" target="_blank" rel="noopener" class="rc rth">
-        <span class="ri">🧵</span>
-        <h3>Threads</h3>
-        <p>Reflexiones, curiosidades y el día a día del proyecto.</p>
-        <span class="rh">@imaginar.juntos</span>
-      </a>
-      <a href="https://x.com/imaginarjuntos" target="_blank" rel="noopener" class="rc rx">
-        <span class="ri">𝕏</span>
-        <h3>X (Twitter)</h3>
-        <p>Noticias rápidas y momentos del proyecto en tiempo real.</p>
-        <span class="rh">@imaginarjuntos</span>
-      </a>
-    </div>
-
-    <div class="rg fi" style="grid-template-columns:1fr;max-width:320px;margin-top:14px;">
-      <a href="https://www.youtube.com/channel/UCmjDXeonhCS56CH6RiOk1UA" target="_blank" rel="noopener" class="rc ryt">
-        <span class="ri">▶️</span>
-        <h3>YouTube</h3>
-        <p>Ángel habla de libros, viaja en el tiempo con su avatar y cubre eventos como las Fiestas Ibero-Romanas de Linares-Cástulo.</p>
-        <span class="rh">Imaginar Juntos</span>
-      </a>
-    </div>
-
-    <p class="rnote">Todos los canales recién estrenados — sé de los primeros en seguir la aventura 🌊</p>
+    <p class="rnote">Las redes están recién estrenadas — sé de los primeros en seguir la aventura 🌊</p>
   </div>
 </section>
 
